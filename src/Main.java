@@ -15,21 +15,12 @@ public class Main {
         
         String pattern = args[0].toLowerCase();
         
-        switch (pattern) {
-            case "factory":
-                demonstrateFactoryMethod();
-                break;
-            case "strategy":
-                demonstrateStrategy();
-                break;
-            case "decorator":
-                demonstrateDecorator();
-                break;
-            case "all":
-                demonstrateAll();
-                break;
-            default:
-                System.out.println("Uso: java Main [factory|strategy|decorator|all]");
+        switch(pattern) {
+            case "factory" -> demonstrateFactoryMethod();
+            case "strategy" -> demonstrateStrategy();
+            case "decorator" -> demonstrateDecorator();
+            case "all" -> demonstrateAll();
+            default -> System.out.println("Uso: java Main [factory|strategy|decorator|all]");
         }
     }
     
