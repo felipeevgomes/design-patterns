@@ -3,8 +3,8 @@ package patterns.strategy;
 import patterns.strategy.strategies.BalancedStrategy;
 
 public class Civilization {
-  private String name;
-  private int militaryPower;
+  private final String name;
+  private final int militaryPower;
   private int resources;
   private AttackStrategy strategy;
   /**
